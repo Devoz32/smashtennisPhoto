@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: #222;
+}
+.main-header .logo img {
+  height: 50px;
+}
+.main-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+.main-header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 2px;
+}
+.main-header nav a.active, .main-header nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+.hero {
+  text-align: center;
+  padding: 4em 1em 2em 1em;
+  background: #eaeaea;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+.hero-image {
+  width: 80%;
+  max-width: 700px;
+  margin: 2em auto 0 auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
+.gallery {
+  padding: 3em 1em;
+}
+.gallery h2, .gallery h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.btn {
+  background: #222;
+  color: #fff;
+  padding: 0.8em 2em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #444;
+}
+.about {
+  padding: 3em 1em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+}
+.about-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.contact {
+  padding: 3em 1em;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact-form button {
+  width: 150px;
+  margin: 0 auto;
+  padding: 0.8em;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.contact-form button:hover {
+  background: #444;
+}
+footer {
+  text-align: center;
+  padding: 2em;
+  background: #222;
+  color: #fff;
+  margin-top: 2em;
+}
+@media (max-width: 700px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
